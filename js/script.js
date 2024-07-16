@@ -85,6 +85,7 @@ inputFilterName.addEventListener('input',async function(){
     displayChart(dates,amounts);
   }else{
     ctx.classList.replace('d-block','d-none');
+    displayAllTable();
   }
 })
 // ********input-search-amount ******
@@ -98,6 +99,7 @@ if(table.length===1){
   displayChart(dates,amounts);
 }else{
   ctx.classList.replace('d-block','d-none');
+displayAllTable();
 }
 })
 // ********************display-chart****************
