@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction app</title>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <h1 class="text-center text-bg-primary mb-5 p-3">Transaction App</h1>
+  <div class="input-serach container mb-5">
+   <div class="row g-3 ">
+    <div class="col-lg-6">
+      <input type="text" class="f-name form-control" placeholder="filter by customer name">
+      </div>
+      <div class="col-lg-6">
+      <input type="number" class="f-amount form-control" placeholder="filter by transaction amount">
+      </div>
+   </div>
+  </div>
+  <div class="container ">
+    <div class="row g-4">
+      <div class="customers-container col-lg-6">
+        <div class="row table-transactions g-1 bg-primary-subtle p-3 rounded-2 shadow-lg">
+
+        </div>
+    </div>
+    <div class="chart-container col-lg-6 d-flex align-items-center ">
+     <canvas id="myChart" class="w-100 d-none"></canvas>
+     </div>
+  </div>
+
+
+
+  
+  
+  
+  
+  
+  <!-- *****************js-files****************** -->
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
