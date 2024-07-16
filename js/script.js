@@ -36,24 +36,24 @@ async function getTableArray(){
 function displayTable(arr){
 tableTransactions.innerHTML=''; 
 tableTransactions.innerHTML=`<div class="col-4">
-<div class="bg-primary text-white text-center fw-bolder p-2">
+<div class="bg-primary text-white text-center fw-bolder p-2 h-100">
   Customer Name</div>
 </div>
 <div class="col-4">
-<div class="bg-primary text-white text-center fw-bolder p-2">Transaction Date</div>
+<div class="bg-primary text-white text-center fw-bolder p-2 h-100">Transaction Date</div>
 </div>
 <div class="col-4">
-<div class="bg-primary text-white text-center fw-bolder p-2">Transaction Amount</div>
+<div class="bg-primary text-white text-center fw-bolder p-2 h-100">Transaction Amount</div>
 </div>`; 
 arr.forEach(r=>tableTransactions.insertAdjacentHTML('beforeend',`
 <div class="col-4">
-<div class="c-name bg-primary text-white text-start ps-3">${r.customerName}</div>
+<div class="c-name bg-primary text-white text-start ps-3 h-100">${r.customerName}</div>
 </div>
 <div class="col-4">
-<div class="c-date bg-primary text-white text-start ps-3">${r.customerDate}</div>
+<div class="c-date bg-primary text-white text-start ps-3 h-100">${r.customerDate}</div>
 </div>
 <div class="col-4">
-<div class="c-amount bg-primary text-white text-start ps-3">${r.customerAmount}</div>
+<div class="c-amount bg-primary text-white text-start ps-3 h-100">${r.customerAmount}</div>
 </div>
 `))
 }
